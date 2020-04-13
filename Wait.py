@@ -25,7 +25,6 @@ driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_caps)
 # 10秒只能找到aa就会直接执行，不会等到10秒
 # 10秒还没知道会抛异常
 # 会影响后续所有find_element方法
-
 driver.implicitly_wait(10)
 
 driver.find_element_by_name('aa')
